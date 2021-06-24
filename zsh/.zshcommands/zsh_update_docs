@@ -1,0 +1,17 @@
+#!/usr/bin/zsh
+
+wget https://raw.githubusercontent.com/wting/autojump/master/README.md -O autojump.md
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/alias-finder/README.md -O alias-finder.md
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/git/README.md -O git.md
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/archlinux/README.md -O archlinux.md
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/colored-man-pages/README.md -O colored-man.md
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/colorize/README.md -O colorize.md
+wget https://github.com/ohmyzsh/ohmyzsh/raw/master/plugins/command-not-found/README.md -O command-not-found.md
+wget https://direnv.net/ -O direnv.html
+wget https://github.com/ohmyzsh/ohmyzsh/raw/master/plugins/gitfast/README.md -O gitfast.md
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/pip/README.md -O pip.md
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/safe-paste/README.md -O safe-paste.md
+wget https://github.com/ohmyzsh/ohmyzsh/raw/master/plugins/zsh-interactive-cd/README.md -O zsh-interactive-cd.md
+wget https://github.com/ohmyzsh/ohmyzsh/raw/master/plugins/zsh-navigation-tools/README.md -O zsh-navigation-tools.md
+wget https://github.com/ohmyzsh/ohmyzsh/raw/master/plugins/zsh_reload/README.md -O zsh-reload.md
+
