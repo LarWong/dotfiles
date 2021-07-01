@@ -1,0 +1,141 @@
+=======================
+tmux keyboard shortcuts
+=======================
+
+tmux is a 'terminal multiplexer' for Unix based operating systems that
+allows multiple terminal sessions to be accessed from a single window. With
+tmux, you can also leave the terminal session without interrupting the
+running process.
+
+Prefix:
+--------
+
+Ctrl + a = Ctrl + b
+
+Sessions
+--------
+
+<prefix> then S         Show all sessions
+<prefix> then $         Rename session
+<prefix> then (         Move to previous session
+<prefix> then )         Move to next session
+<prefix> then $         Rename session
+<prefix> then D         Detach from session
+
+
+Windows
+-------
+
+<prefix> then C         Create window
+<prefix> then N         Next window
+<prefix> then [0 - 9]   Switch / select window by number
+<prefix> then ,         Rename current window
+<prefix> then P         Previous window
+
+
+Panes
+-----
+
+<prefix> then ;         	Toggle last active pane
+<prefix> then %         	Split pane vertically
+<prefix> then "         	Split pane horizontally
+<prefix> then {         	Move the current pane left
+<prefix> then }         	Move the current pane right
+<prefix> then Arrow keys 	Switch pane to the direction
+<prefix> then Q         	Show pane numbers
+<prefix> then Q then [0 - 9] 	Switch / select pane by number
+<prefix> then Z         	Toggle pane zoom
+<prefix> then !         	Convert pane into a window
+<prefix> then up/down    	Resize current pane height
+<prefix> then Ctrl + Up/Down 	Resize current pane height
+<prefix> then Left/Right 	Resize current pane width
+<prefix> then Ctrl + Left/Right Resize current pane width
+<prefix> then Space     	Toggle between pane layouts
+<prefix> then O         	Switch to next pane
+<prefix> then X         	Close current pane
+
+
+Copy mode
+---------
+
+<prefix> then [         Enter copy mode
+<prefix> then Page Up   Enter copy mode and scroll one page up
+Q                       Quit mode
+G                       Go to top line
+Up arrow / Down arrow   Scroll up / down
+H                       Move cursor left
+J                       Move currsor down
+K                       Move cursor up
+L                       Move cursor right
+W                       Move cursor forward one word at a time
+B                       Move cursor backward one word at a time
+/                       Search forward
+?                       Search backward
+N                       Next keyword occurrence
+Shift + N               Previous keyword occurrence
+Space                   Start selection
+Esc                     Clear selection
+Enter                   Copy selection
+<prefix> then ]         Paste contents of buffer_0
+
+
+Misc
+----
+
+<prefix> then :         Enter command mode
+
+
+Help
+----
+
+<prefix> then ?         Show shortcut
+
+Custom
+------
+
+
+    <prefix> then e 		opens ~/.tmux.conf.local with the editor defined by $EDITOR
+    <prefix> then r 		reloads the configuration
+    Ctrl-l 			clears both the screen and the tmux history
+    <prefix> then Ctrl-c 	creates a new session
+    <prefix> then Ctrl-f 	lets you switch to another session by name
+    
+    <prefix> then Ctrl-h, 	let you navigate windows (default <prefix> n and <prefix> p are unbound)
+    <prefix> then Ctrl-l
+    
+    <prefix> then Tab 		brings you to the last active window
+    <prefix> then - 		splits the current pane vertically
+    <prefix> then _ 		splits the current pane horizontally
+    
+    <prefix> then h,			let you navigate panes ala vim
+    <prefix> then j,
+    <prefix> then k,
+    <prefix> then l
+
+    <prefix> then H,			let you swap panes
+    <prefix> then J,
+    <prefix> then K,
+    <prefix> then L 
+
+    <prefix> then <,		let you swap panes 
+    <prefix> then >
+
+    <prefix> then + 		maximizes the current pane to a new window
+    <prefix> then m 		toggles mouse mode on or off
+    <prefix> then U 		launches Urlview (if available)
+    <prefix> then F 		launches Facebook PathPicker (if available)
+    <prefix> then Enter 	enters copy-mode
+    <prefix> then b 		lists the paste-buffers
+    <prefix> then p 		pastes from the top paste-buffer
+    <prefix> then P 		lets you choose the paste-buffer to paste from
+
+Additionally, copy-mode-vi matches my own Vim configuration
+Bindings for copy-mode-vi:
+
+    v begins selection / visual mode
+    Ctrl-v toggles between blockwise visual mode and visual mode
+    H jumps to the start of line
+    L jumps to the end of line
+    y copies the selection to the top paste-buffer
+    Escape cancels the current operation
+

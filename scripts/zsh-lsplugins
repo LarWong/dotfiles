@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# List out all zsh plugins
+cat ~/.zshrc | pcregrep -M "^plugins=([^)]*$)" | sed 's/plugins=(//g' | sed 's/ //g'

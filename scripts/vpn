@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if protonvpn s | grep -q "Connected" ; then
+	echo "Disconnecting VPN ..."
+	sudo protonvpn d && notify-send -i placeholder "Disconnected from VPN"
+	echo "Updating Mirrorlist ..."
+	sudo systemctl start reflector.service && notify-send -i placeholder "Mirrorlist updated"
+else
+	echo "Connecting to VPN ..."
+        sudo protonvpn c -r && notify-send -i placefolder "Connected to VPN"
+	vpn_status=$(protonvpn s)
+	vpn_ip=$(grep "IP:" <<< "$vpn_status" | sed 's/IP://g' | sed 's/^[ \t]*//')
+	vpn_pro=$(grep "Protocol:" <<< "$vpn_status" | sed 's/Protocol://g' | sed 's/^[ \t]*//')
+	vpn_server=$(grep "Server:" <<< "$vpn_status" | sed 's/Server://g' | sed 's/^[ \t]*//')
+	vpn_country=$(grep "Country:" <<< "$vpn_status" | sed 's/Country://g' | sed 's/^[ \t]*//')
+	vpn_city=$(grep "City:" <<< "$vpn_status" | sed "s/City://g" | sed 's/^[ \t]*//')
+	vpn_load=$(grep "Load:" <<< "$vpn_status" | sed "s/Load://g" | sed 's/^[ \t]*//')
+	notify-send -t 10000 -i placeholder "Connected to $vpn_server: $vpn_ip" "Country:\t$vpn_country\nCity:\t$vpn_city\nLoad:\t$vpn_load\nProtocol: $vpn_pro"
+	echo "Updating Mirrorlist ..."
+	sudo systemctl start reflector.service && notify-send -i placeholder "Mirrorlist updated"
+fi
+
+
+
