@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# If no vpn connection, activate vpn and update Mirrorlist
+# else disconnect from vpn and update Mirrorlist
+
 if protonvpn s | grep -q "Connected" ; then
 	echo "Disconnecting VPN ..."
 	sudo protonvpn d && notify-send -i placeholder "Disconnected from VPN"
