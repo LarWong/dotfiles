@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Use this script to load configs
+
+stow bash -t ~
+stow config -t ~
+stow git -t ~
+stow nano -t ~
+stow tmux -t ~
+stow zsh -t ~
+stow scripts -t ~/.local/bin/
