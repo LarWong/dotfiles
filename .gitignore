@@ -2,4 +2,4 @@
 
 # binaries
 dconf/
-pulse/
+pulse/*
