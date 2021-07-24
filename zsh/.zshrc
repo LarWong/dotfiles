@@ -87,11 +87,12 @@ plugins=(git
          gitfast
          pip
          safe-paste
-         zsh-autosuggestions
          zsh-interactive-cd
          zsh_reload
          zsh-syntax-highlighting
 )
+
+         # zsh-autosuggestions
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,7 +110,9 @@ if [ -x "$(command -v exa)" ]; then
 fi
 
 # alias neovim
-alias v='nvim'
+alias v='lvim'
+alias nv='nvim'
+alias v-update='cd ~/.local/share/lunarvim/lvim && git pull && echo "Make sure to :PackerSync after" && cd ~'
 
 # alias for dell power management
 alias power-mode="sudo smbios-thermal-ctl -g"
@@ -147,3 +150,10 @@ export EDITOR='nvim'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# PyEnv
+eval "$(pyenv init -)"
+
+# activate virtual env when cd
+eval "$(pyenv virtualenv-init -)"
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
