@@ -1,0 +1,29 @@
+2021/07/07-17:14:02.352 5 Creating DB /home/larry/.config/google-chrome/Default/Session Storage since it was missing.
+2021/07/07-17:14:02.435 5 Reusing MANIFEST /home/larry/.config/google-chrome/Default/Session Storage/MANIFEST-000001
+2021/07/07-20:02:14.124 5d Level-0 table #5: started
+2021/07/07-20:02:14.133 5d Level-0 table #5: 27818 bytes OK
+2021/07/07-20:02:14.138 5d Delete type=0 #3
+2021/07/07-20:34:54.891 6d Level-0 table #7: started
+2021/07/07-20:34:54.901 6d Level-0 table #7: 19927 bytes OK
+2021/07/07-20:34:54.909 6d Delete type=0 #4
+2021/07/07-21:02:25.398 6d Level-0 table #9: started
+2021/07/07-21:02:25.416 6d Level-0 table #9: 25815 bytes OK
+2021/07/07-21:02:25.420 6d Delete type=0 #6
+2021/07/08-10:51:55.641 e6 Level-0 table #11: started
+2021/07/08-10:51:55.660 e6 Level-0 table #11: 27202 bytes OK
+2021/07/08-10:51:55.665 e6 Delete type=0 #8
+2021/07/08-17:10:26.838 198 Level-0 table #13: started
+2021/07/08-17:10:26.842 198 Level-0 table #13: 28354 bytes OK
+2021/07/08-17:10:26.847 198 Delete type=0 #10
+2021/07/12-11:58:31.518 201 Level-0 table #15: started
+2021/07/12-11:58:31.522 201 Level-0 table #15: 27054 bytes OK
+2021/07/12-11:58:31.527 201 Delete type=0 #12
+2021/07/12-11:58:31.528 201 Compacting 4@0 + 1@1 files
+2021/07/12-11:58:31.542 201 Generated table #16@0: 554 keys, 32422 bytes
+2021/07/12-11:58:31.542 201 Compacted 4@0 + 1@1 files => 32422 bytes
+2021/07/12-11:58:31.546 201 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/07/12-11:58:31.547 201 Delete type=2 #9
+2021/07/12-11:58:31.547 201 Delete type=2 #11
+2021/07/12-11:58:31.547 201 Delete type=2 #13
+2021/07/12-11:58:31.547 201 Delete type=2 #7
+2021/07/12-11:58:31.547 201 Delete type=2 #15

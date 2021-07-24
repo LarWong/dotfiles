@@ -1,0 +1,47 @@
+{
+   "checksum": "2bd49b7bf0f7f122a4ebebcaf6f57805",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13270167914024657",
+            "guid": "d71ba011-3f8c-4ed2-95b5-708ccb5f5020",
+            "id": "5",
+            "name": "Anatole | Hugo Themes",
+            "type": "url",
+            "url": "https://themes.gohugo.io/themes/anatole/"
+         }, {
+            "date_added": "13270168031945851",
+            "guid": "747c28c3-b8f9-426c-9ec4-6d5caf7a74cf",
+            "id": "6",
+            "name": "Academic | Hugo Themes",
+            "type": "url",
+            "url": "https://themes.gohugo.io/themes/starter-academic/"
+         } ],
+         "date_added": "13270166035202856",
+         "date_modified": "13270168031945851",
+         "guid": "00000000-0000-4000-a000-000000000002",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13270166035202857",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000003",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13270166035202859",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000004",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

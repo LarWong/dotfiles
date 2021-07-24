@@ -1,5 +1,6 @@
 # ignore certain files
 
 # binaries
-dconf/
-pulse/*
+/config/google-chrome/
+/config/dconf/
+/config/pulse/
