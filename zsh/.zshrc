@@ -90,9 +90,8 @@ plugins=(git
          zsh-interactive-cd
          zsh_reload
          zsh-syntax-highlighting
-)
-
-         # zsh-autosuggestions
+         zsh-autosuggestions
+         )
 
 source $ZSH/oh-my-zsh.sh
 
